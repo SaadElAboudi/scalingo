@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalingo - Plateforme d'hébergement simplifiée</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/scalingo-logo.png" alt="Scalingo Logo" class="logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Technologies</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Documentation</a></li>
+        </ul>
+        <div class="actions">
+            <a href="#" class="book-demo">Book a demo</a>
+            <a href="#" class="free-trial">Free trial</a>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="circle circle-blue circle-top-left"></div>
+        <div class="circle circle-yellow circle-bottom-left"></div>
+        <div class="circle circle-blue circle-top-right"></div>
+        <div class="circle circle-yellow circle-bottom-right"></div>
+        <div class="circle circle-blue circle-middle-right"></div>
+        <div class="circle circle-yellow circle-middle-left"></div>
+        <!-- <div class="mockup">
+            <img src="assets/mockup.png" alt="Scalingo Dashboard">
+        </div> -->
+        <!-- <div class="mockup-small">
+            <img src="assets/mockup-small.png" alt="GitHub Integration">
+        </div> -->
+        <div class="hero-content">
+            <h1>Deploy at lightning speed</h1>
+            <p>Focus on your code. Innovate faster. Scalingo takes care of painful Ops tasks so you don’t have to.</p>
+            <div class="buttons">
+                <a href="#" class="btn btn-primary">Try for Free</a>
+                <a href="#" class="btn btn-secondary">Book a demo</a>
+            </div>
+        </div>
+        <div class="client-logos">
+            <img src="assets/freshmile-logo.png" alt="freshmile Logo" class="client-logo">
+            <img src="assets/octo-logo.png" alt="OCTO Logo" class="client-logo">
+            <img src="assets/ingenico-logo.png" alt="ingenico Logo" class="client-logo">
+            <img src="assets/studio-logo.png" alt="Studio Logo" class="client-logo">
+            <img src="assets/cucumber-logo.png" alt="Cucumber Logo" class="client-logo">
+            <img src="assets/engie-logo.png" alt="ENGIE Logo" class="client-logo">
+        </div>
+        <div class="mockup-preview">
+            <img src="assets/mockup-small.png" alt="Scalingo Dashboard Preview">
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="one-click-deploy">
+            <div class="content">
+                <h2>Experience One-Click Deploy</h2>
+                <p>Launch your app in seconds with preconfigured templates. Select your stack, click deploy, and watch your app go live instantly.</p>
+                <div class="template-options">
+                    <button class="template-btn" data-template="Node.js">Node.js</button>
+                    <button class="template-btn" data-template="Python">Python</button>
+                    <button class="template-btn" data-template="Rails">Rails</button>
+                </div>
+                <div class="template-preview">
+                    <h3>Deploy <span id="template-title">Node.js Starter</span></h3>
+                    <p id="template-services-count">This template deploys 3 services.</p>
+                    <div class="deploy-action">
+                        <p>Please sign in to deploy this template.</p>
+                        <a href="https://scalingo.com/login" class="deploy-login">Login</a>
+                    </div>
+                    <div class="services-list" id="services-list">
+                        <!-- Les services seront insérés dynamiquement via JavaScript -->
+                    </div>
+                </div>
+                <button class="deploy-btn">Deploy Now</button>
+            </div>
+            <!-- <div class="mockup-deploy">
+                <img src="assets/mockup-deploy.png" alt="Deployment Preview">
+            </div> -->
+        </section>
+
+        <section class="why-scalingo">
+            <h2>Why Choose Scalingo</h2>
+            <p>Scalingo empowers developers with unmatched speed, reliability, and cost efficiency.</p>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>2.1s</h3>
+                    <p>Average Deployment Time</p>
+                </div>
+                <div class="metric-card">
+                    <h3>99.99%</h3>
+                    <p>Uptime Guarantee</p>
+                </div>
+                <div class="metric-card">
+                    <h3>No Egress Fees</h3>
+                    <p>Cost-Effective Hosting</p>
+                </div>
+                <div class="metric-card">
+                    <h3>EU Hosting</h3>
+                    <p>France-Based Data Centers</p>
+                </div>
+            </div>
+            <div class="stats-section">
+                <h3>3.5M+ deploys per month</h3>
+                <p>Real-time stats on Scalingo's usage and performance.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">USERS</span>
+                        <span class="stat-value" data-target="1027767">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">SERVICES</span>
+                        <span class="stat-value" data-target="2848274">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">DEPLOYS</span>
+                        <span class="stat-value" data-target="3540055">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">REQUESTS</span>
+                        <span class="stat-value" data-target="24555886">0</span>
+                    </div>
+                </div>
+            </div>
+            <table class="metrics-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>Scalingo</th>
+                    <th>Competitor A</th>
+                    <th>Competitor B</th>
+                </tr>
+                <tr>
+                    <td>Average Deployment Time</td>
+                    <td>2.1s</td>
+                    <td>5s</td>
+                    <td>3.8s</td>
+                </tr>
+                <tr>
+                    <td>Uptime</td>
+                    <td>99.99%</td>
+                    <td>99.95%</td>
+                    <td>99.90%</td>
+                </tr>
+                <tr>
+                    <td>Egress Fees</td>
+                    <td>None</td>
+                    <td>0.05$/GB</td>
+                    <td>0.03$/GB</td>
+                </tr>
+                <tr>
+                    <td>Hosting Location</td>
+                    <td>EU (France)</td>
+                    <td>US</td>
+                    <td>Multi-regions</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <div class="modal" id="deploy-modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3>Deploying Your App...</h3>
+            <p id="modal-message">Your <span id="template-name">Node.js</span> application is being deployed. This will take about 2 seconds!</p>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p class="success-message">Deployment successful! <a href="#">View your app</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
